@@ -16,16 +16,23 @@
       <ul class="user-nav">
 
         <li class="user-nav__item">
-          <a href="#" class="user-nav__catalog-link">Каталог товаров</a>
+          <a class="user-nav__catalog-link" href="#" >Каталог товаров</a>
         </li>
 
         <li class="user-nav__item">
-          <a href="#" class="user-nav__to-order-link">Вязание на заказ</a>
+          <a class="user-nav__to-order-link" href="#" >Вязание на заказ</a>
         </li>
 
       </ul>
       <ul class="user-action">
-
+        <li class="user-action__item">
+          <form class="user-action__user-search user-search" action="get">
+            <input class="user-search__input" type="text" name="Search" placeholder="Поиск по сайту">
+          </form>
+        </li>
+        <li class="user-action__item">
+          <a class="user-action__cart cart" href="#">Корзина <span class="cart__value">пока пуста</span></a>
+        </li>
       </ul>
     </nav>
 
