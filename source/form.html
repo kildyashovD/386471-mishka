@@ -9,8 +9,11 @@
 <body>
 
   <header class="page-header">
+
     <h1 class="visually-hidden">Магазин игрушек ручной работы Mishka</h1>
-    <a class="logo" href="index.html"><img src="http://placehold.it/86x35" alt="Logo" class="logo__img"></a>
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="http://placehold.it/86x35" alt="Logo">
+    </a>
     <nav class="main-nav">
       <ul class="user-nav">
         <li class="user-nav__item">
@@ -23,14 +26,13 @@
       <ul class="user-action">
         <li class="user-action__item">
           <form class="user-action__user-search user-search" method="get" action="https://echo.htmlacademy.ru">
-            <input class="user-search__input" type="text" name="Search" placeholder="Поиск по сайту">
+            <input class="user-search__input" type="text" name="search" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="user-action__item">
-          <a class="user-action__cart cart" href="#">Корзина <span class="cart__value">пока пуста</span></a>
+          <a class="user-action__cart cart" href="#">Корзина: <span class="cart__value">пока пуста</span></a>
         </li>
       </ul>
-
     </nav>
 
   </header>
@@ -42,13 +44,13 @@
       <p class="to-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="to-order__form form-order" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form-order__item">
-            <legend class="form-order__header">Тип</legend>
-            <!--Interior---->
-            <input class="form-order__product-type-radio" type="radio" name="product-type" id="product-type-interior" checked>
-            <label class="form-order__product-type-label" for="product-type-interior">Аксессуар для интерьера</label>
-            <!--Toys-->
-            <input class="form-order__product-type-radio" type="radio" name="product-type" id="product-type-toys">
-            <label class="form-order__product-type-label" for="product-type-toys">Детская игрушка</label>
+          <legend class="form-order__header">Тип</legend>
+          <!--Interior-->
+          <input class="form-order__product-type-radio" type="radio" name="product-type" id="product-type-interior" checked>
+          <label class="form-order__product-type-label" for="product-type-interior">Аксессуар для интерьера</label>
+          <!--Toys-->
+          <input class="form-order__product-type-radio" type="radio" name="product-type" id="product-type-toys">
+          <label class="form-order__product-type-label" for="product-type-toys">Детская игрушка</label>
         </fieldset>
         <fieldset class="form-order__item">
           <legend class="form-order__header">Цвет</legend>
@@ -98,9 +100,11 @@
         <button class="form-order__button" type="submit" name="button">Отправить заказ</button>
       </form>
     </section>
+
   </main>
 
   <footer class="page-footer">
+
     <h2 class="page-footer__header visually-hidden">Подвал сайта</h2>
     <div class="page-footer__item social-nets">
       <a class="social-nets__link" href="#">Instagram</a>
@@ -110,6 +114,7 @@
     <div class="page-footer__item site-developer">
       <a class="site-developer__link" href="#">Разработано в HTML-Academy</a>
     </div>
+
   </footer>
 
 </body>

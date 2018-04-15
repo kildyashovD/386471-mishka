@@ -9,8 +9,11 @@
 <body>
 
   <header class="page-header">
+
     <h1 class="visually-hidden">Магазин игрушек ручной работы Mishka</h1>
-    <a class="logo" href="#"><img src="http://placehold.it/86x35" alt="Logo" class="logo__img"></a>
+    <a class="logo" href="#">
+      <img class="logo__img" src="http://placehold.it/86x35" alt="Logo">
+    </a>
     <nav class="main-nav">
       <ul class="user-nav">
         <li class="user-nav__item">
@@ -23,14 +26,13 @@
       <ul class="user-action">
         <li class="user-action__item">
           <form class="user-action__user-search user-search" method="get" action="https://echo.htmlacademy.ru">
-            <input class="user-search__input" type="text" name="Search" placeholder="Поиск по сайту">
+            <input class="user-search__input" type="text" name="search" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="user-action__item">
-          <a class="user-action__cart cart" href="#">Корзина <span class="cart__value">пока пуста</span></a>
+          <a class="user-action__cart cart" href="#">Корзина: <span class="cart__value">пока пуста</span></a>
         </li>
       </ul>
-
     </nav>
 
   </header>
@@ -70,7 +72,6 @@
         <dd class="product-price__value">990 руб.</dd>
       </dl>
       <a class="product-of-the-week__order-link" href="#">Заказать</a>
-
     </section>
 
     <section class="about-us">
@@ -101,11 +102,11 @@
       <h2 class="contacts__header">Контакты</h2>
       <dl class="contacts__data">
         <div class="contacts__wrapper">
-          <dl class="contacts__email">e-mail:</dl>
+          <dt class="contacts__email">e-mail:</dt>
           <dd class="contacts__email-value">info@mimimishkashop.ru</dd>
         </div>
         <div class="contacts__wrapper">
-          <dl class="contacts__address">адрес:</dl>
+          <dt class="contacts__address">адрес:</dt>
           <dd class="contacts__address-value">
             <address class="contacts__address-value-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
           </dd>
@@ -121,6 +122,7 @@
   </main>
 
   <footer class="page-footer">
+
     <h2 class="page-footer__header visually-hidden">Подвал сайта</h2>
     <div class="page-footer__item social-nets">
       <a class="social-nets__link" href="#">Instagram</a>
@@ -130,6 +132,7 @@
     <div class="page-footer__item site-developer">
       <a class="site-developer__link" href="#">Разработано в HTML-Academy</a>
     </div>
+
   </footer>
 
 </body>
