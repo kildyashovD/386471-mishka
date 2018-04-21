@@ -1,8 +1,11 @@
 .product__image {
   display: block;
+  box-sizing: border-box;
 }
 
 .product__content {
+  box-sizing: border-box;
+
   padding: 30px;
 
   &--border-gray {
@@ -33,4 +36,20 @@
   margin: 0;
 
   font-size: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    display: flex;
+
+    margin-bottom: 54px;
+    padding: 0;
+    min-height: 334px;
+  }
+  .product__image {
+    width: 50%;
+  }
+  .product__content {
+    width: 50%;
+  }
 }
