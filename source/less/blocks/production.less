@@ -26,3 +26,35 @@
   color: @color-gray;
   font-weight: 400;
 }
+
+@media (min-width: @tablet-width) {
+  .production {
+    padding: 0;
+  }
+  .production__content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+  }
+  .production__heading {
+    margin-top: 385px;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-left: 68px;
+
+    font-size: 20px;
+  }
+  .production__description{
+    margin-bottom: 40px;
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .production__order-link {
+    width: 100%;
+
+    text-transform: uppercase;
+  }
+}
