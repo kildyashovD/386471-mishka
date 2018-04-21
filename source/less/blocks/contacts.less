@@ -54,3 +54,25 @@
 
   padding-right: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 0
+  }
+  .contacts__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__data {
+    display: flex;
+  }
+  .contacts__map-yandex {
+    margin-left: -50px;
+    width: 768px;
+  }
+  .contacts__wrapper {
+    &--width-half {
+      width: 50%;
+    }
+  }
+}
