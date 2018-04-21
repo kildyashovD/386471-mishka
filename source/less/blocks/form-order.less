@@ -1,0 +1,143 @@
+.form-order {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.form-order__item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-order__heading {
+  padding: 0;
+  margin-bottom: 28px;
+
+  line-height: 17px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form-order__product-type-label {
+  display: block;
+
+  position: relative;
+  margin: 0 0 24px;
+  padding: 0 0 0 65px;
+
+  line-height: 18px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+}
+
+.form-order__product-type-radio:checked + .form-order__product-type-label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+
+    background-color: #63d1bb;
+
+    border-radius: 50%;
+  }
+}
+
+.form-order__product-color-label {
+  display: block;
+
+  position: relative;
+  margin: 0 0 35px;
+  padding: 0 0 0 65px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid black;
+  }
+}
+
+.form-order__product-color-checkbox:checked + .form-order__product-color-label {
+  &::before {
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.form-order__customer-name-label {
+  display: block;
+}
+
+.form-order__customer-name {
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 18px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.form-order__customer-email,
+.form-order__customer-tel {
+  display: block;
+
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 18px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.form-order__message {
+  display: block;
+  box-sizing: border-box;
+
+  margin: 0 0 18px;
+  width: 100%;
+  padding: 17px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.form-order__notification {
+  margin: 0 0 31px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
