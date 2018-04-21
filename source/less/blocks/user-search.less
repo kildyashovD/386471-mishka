@@ -1,4 +1,25 @@
+.user-search {
+  position: relative;
+}
+
 .user-search__input {
+  display: block;
+
   font: inherit;
   color: rgb(0, 0, 0);
+}
+
+@media (min-width: @tablet-width) {
+  .user-search__input::placeholder {
+    visibility: hidden;
+  }
+  .user-search__input {
+    max-width: 30px;
+
+    border: none;
+
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
