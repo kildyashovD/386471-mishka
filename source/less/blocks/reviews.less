@@ -1,4 +1,6 @@
 .reviews {
+  position: relative;
+
   margin: 0;
   padding: 30px 30px 40px 30px;
 }
@@ -34,4 +36,34 @@
 
 .reviews__switch {
   margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding: 85px 0;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .reviews__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .reviews__write-us-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .reviews__switch {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .reviews__text {
+    margin-bottom: 60px;
+  }
+  .reviews__write-us-link {
+    width: 175px;
+  }
 }
