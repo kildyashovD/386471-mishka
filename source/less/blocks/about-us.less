@@ -16,5 +16,26 @@
 }
 
 .about-us__item {
+  box-sizing: border-box;
+
   padding-top: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding: 0;
+  }
+  .about-us__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-us__content{
+    display: flex;
+  }
+  .about-us__column {
+    width: 50%;
+  }
+  .about-us__item {
+    padding-right: 32px;
+  }
 }
