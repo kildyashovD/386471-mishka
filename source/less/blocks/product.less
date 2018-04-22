@@ -53,3 +53,28 @@
     width: 50%;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .product {
+    flex-direction: column;
+
+    width: 315px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .product__image,
+  .product__content {
+    width: 100%;
+  }
+  .product__content {
+    min-height: 267px;
+  }
+}
