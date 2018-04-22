@@ -153,12 +153,21 @@
   .form-order {
     padding: 0;
   }
+
   .form-order__container {
     display: flex;
+
+    &--flex-row-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
   }
+
   .form-order__heading {
     width: 25%;
   }
+
   .form-order__wrapper {
     width: 75%;
 
@@ -167,6 +176,7 @@
       flex-wrap: wrap;
     }
   }
+
   .form-order__item {
     padding-top: 65px;
 
@@ -174,6 +184,7 @@
       background-color: rgb(241, 241, 241);
     }
   }
+
   .form-order__product-type-label {
     margin-bottom: 60px;
 
@@ -190,6 +201,7 @@
       left: 18px;
     }
   }
+
   .form-order__product-color-label {
     width: 250px;
     margin-bottom: 60px;
@@ -203,12 +215,14 @@
       height: 51px;
     }
   }
+
   .form-order__customer-name-label {
     margin-right: 25px;
 
     font-size: 19px;
     line-height: 18px;
   }
+
   .form-order__customer-name {
     margin-bottom: 38px;
     padding-top: 0;
@@ -216,22 +230,17 @@
     font-size: 19px;
     line-height: 18px;
   }
-  .form-order__container {
 
-    &--flex-row-reverse {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-    }
-  }
   .form-order__button {
     margin-left: 0;
 
     text-transform: uppercase;
   }
+
   .form-order__notification {
     margin: 0;
   }
+
   .form-order__customer-email,
   .form-order__customer-tel {
     font-size: 19px;
@@ -239,9 +248,11 @@
 
     background-color: transparent;
   }
+
   .form-order__customer-email {
     margin-bottom: 50px;
   }
+
   .form-order__message {
     margin-bottom: 50px;
   }
