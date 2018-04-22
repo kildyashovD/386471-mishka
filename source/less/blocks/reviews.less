@@ -67,3 +67,33 @@
     width: 175px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding: 0;
+
+    min-height: 550px;
+
+    background-image: none;
+  }
+  .reviews__wrapper {
+    height: 100%;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .reviews__heading {
+    padding-top: 70px;
+    padding-left: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .reviews__content {
+    padding-left: 175px;
+  }
+  .reviews__write-us-link {
+    top: 70px;
+  }
+}
