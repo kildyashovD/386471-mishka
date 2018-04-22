@@ -18,10 +18,7 @@
 @media (min-width: @tablet-width) {
   .user-nav {
     display: flex;
-
-    position: absolute;
-    top: 80px;
-    left: 0;
+    order: 2;
 
     font-size: 15px;
 
@@ -38,6 +35,8 @@
 
 @media (min-width: @desktop-width) {
   .user-nav {
+    order: 0;
+
     position: static;
   }
   .user-nav__item {
