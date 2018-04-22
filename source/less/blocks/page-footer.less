@@ -7,3 +7,22 @@
     background-color: rgb(241, 241, 241);
   }
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 143px;
+  }
+  .page-footer__logo {
+    display: block;
+
+    position: static;
+  }
+}
