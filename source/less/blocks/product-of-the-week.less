@@ -1,5 +1,9 @@
 .product-of-the-week {
-  margin: 0;
+  box-sizing: border-box;
+
+  position: relative;
+  width: 320px;
+  margin: auto;
   padding: 30px 30px 40px 30px;
 }
 
@@ -28,4 +32,116 @@
   font-size: 15px;
   font-weight: 400;
   color: @color-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .product-of-the-week {
+    width: auto;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .product-of-the-week__wrapper {
+    position: relative;
+    padding: 30px 0;
+  }
+
+  .product-of-the-week__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  .product-of-the-week__name {
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-of-the-week__text {
+    margin: 0;
+    max-width: 120px;
+
+    line-height: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .product-of-the-week__content {
+    display: flex;
+
+    min-height: 400px;
+  }
+
+  .product-of-the-week__content-text {
+    box-sizing: border-box;
+
+    padding-right: 40px;
+    width: 50%;
+
+    &--position-tablet {
+      position: absolute;
+
+      left: 0;
+      bottom: 31px;
+    }
+  }
+
+  .product-of-the-week__img {
+    width: 50%;
+
+    object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-of-the-week {
+    min-height: 800px;
+  }
+
+  .product-of-the-week__wrapper {
+    padding: 0;
+  }
+
+  .product-of-the-week__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    padding-top: 130px;
+  }
+
+  .product-of-the-week__name {
+    padding-left: 50px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product-of-the-week__content {
+    display: block;
+
+    max-width: 292px;
+    padding-left: 175px;
+  }
+
+  .product-of-the-week__content-text {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-of-the-week__img {
+    position: absolute;
+    top: 71px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .product-of-the-week__price {
+    margin-top: 114px;
+  }
 }

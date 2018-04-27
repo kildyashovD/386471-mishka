@@ -14,3 +14,45 @@
 .user-nav__catalog-link {
   color: rgb(0, 0, 0);
 }
+
+@media (min-width: @tablet-width) {
+  .user-nav {
+    display: flex;
+    order: 2;
+
+    font-size: 15px;
+
+    z-index: 1;
+  }
+
+  .user-nav__item {
+    padding: 0;
+    padding-top: 24px;
+    padding-right: 30px;
+
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-nav {
+    order: 0;
+
+    position: static;
+  }
+
+  .user-nav__item {
+    padding-top: 30px;
+    padding-left: 34px;
+
+    font-size: 17px;
+
+    border-left: 2px solid rgb(236, 236, 236);
+
+    &:first-child {
+      padding-left: 0;
+
+      border: none;
+    }
+  }
+}

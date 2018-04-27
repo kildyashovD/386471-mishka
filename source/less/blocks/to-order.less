@@ -9,6 +9,13 @@
   }
 }
 
+.to-order__wrapper {
+  box-sizing: border-box;
+
+  width: 320px;
+  margin: auto;
+}
+
 .to-order__description {
   margin: 0;
   padding: 30px;
@@ -16,4 +23,23 @@
   font-size: 13px;
   font-weight: 400;
   color: @color-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .to-order__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .to-order__wrapper {
+    width: auto;
+  }
+
+  .to-order__description {
+    padding: 0;
+    padding-top: 78px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
