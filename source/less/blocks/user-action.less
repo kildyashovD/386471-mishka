@@ -9,6 +9,10 @@
   padding: 30px 30px 30px 75px;
 
   border-top: 2px solid rgb(236, 236, 236);
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .user-action__cart {
@@ -40,5 +44,33 @@
     padding: 31px 0 34px 83px;
 
     border-left: 2px solid rgb(236, 236, 236);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-action {
+    flex-wrap: wrap;
+
+    max-width: 351px;
+  }
+
+  .user-action__cart {
+    padding-left: 85px;
+  }
+
+  .user-action__item {
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .user-action__delivery {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
   }
 }
