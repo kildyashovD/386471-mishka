@@ -36,6 +36,7 @@
 .product-nav__link {
   display: block;
 
+  position: relative;
   padding: 28px;
   padding-right: 160px;
 
@@ -53,14 +54,14 @@
 
 @media (min-width: @tablet-width) {
   .product-nav {
-    min-height: 746px;
+    min-height: 740px;
 
     background-image: url("../img/hero-desktop.jpg");
     background-size: cover;
   }
 
   .product-nav__lead {
-    padding: 161px 0 447px 0;
+    padding: 151px 0 373px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -75,8 +76,41 @@
   }
 
   .product-nav__link {
+    padding: 29px 110px 28px 36px;
+
     font-size: 20px;
     line-height: 30px;
+    font-weight: 400;
+
+    &--interior-icon::after {
+      content: "";
+
+      position: absolute;
+      width: 41px;
+      height: 62px;
+      top: 31px;
+      right: 35px;
+
+      opacity: 0.7;
+
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--toys-icon::after {
+      content: "";
+
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 31px;
+      right: 35px;
+
+      opacity: 0.7;
+
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
