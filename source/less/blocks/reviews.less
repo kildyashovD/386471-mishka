@@ -4,7 +4,7 @@
   position: relative;
   width: 320px;
   margin: auto;
-  padding: 30px 30px 40px 30px;
+  padding: 30px 30px 50px 30px;
 }
 
 .reviews__heading {
@@ -37,7 +37,17 @@
 }
 
 .reviews__switch {
+  display: flex;
+
   margin-bottom: 38px;
+
+  .reviews__previous-button,
+  .reviews__next-button {
+    box-sizing: border-box;
+
+    width: 50%;
+    height: 48px;
+  }
 }
 
 @media (min-width: @tablet-width) {
