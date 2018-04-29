@@ -16,12 +16,21 @@
   }
 
   &--size-l {
-    width: 290px;
+    width: 260px;
     padding: 13px 10px;
   }
 
   &--theme-gray {
     border: 2px solid @color-gray;
     color: @color-gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+
+    &--size-l {
+      width: 290px;
+    }
   }
 }
