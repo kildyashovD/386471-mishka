@@ -174,11 +174,15 @@
   }
 
   .form-order__heading {
+    box-sizing: border-box;
+
     width: 25%;
     margin-bottom: 0;
   }
 
   .form-order__wrapper {
+    box-sizing: border-box;
+
     width: 75%;
 
     &--flex-row {
@@ -287,7 +291,37 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-order__item {
+    padding-top: 67px;
+
+    &--position-top {
+      padding-top: 26px;
+    }
+  }
+
+  .form-order__heading {
+    width: 16.7%;
+
+    padding-left: 63px;
+  }
+
+  .form-order__wrapper {
+    width: 66.5%;
+
+    &--width-full {
+      width: 83.3%;
+    }
+  }
+
+  .form-order__product-color-label {
+    width: 262px;
+  }
+
   .form-order__button {
-    margin-left: 25%;
+    margin-left: 16.7%;
+  }
+
+  .form-order__notification {
+    margin-right: 16.7%;
   }
 }
