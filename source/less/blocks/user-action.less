@@ -26,12 +26,26 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
+    flex-wrap: wrap;
+
+    max-width: 349px;
+    margin-left: auto;
   }
 
   .user-action__item {
     padding: 0;
 
     border: none;
+
+    &--hidden {
+      display: block;
+
+      padding-top: 12px;
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+    }
   }
 
   .user-action__user-search {
@@ -49,8 +63,6 @@
 
 @media (min-width: @desktop-width) {
   .user-action {
-    flex-wrap: wrap;
-
     max-width: 351px;
   }
 
