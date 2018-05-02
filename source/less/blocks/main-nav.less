@@ -2,6 +2,79 @@
   position: relative;
 }
 
+.main-nav__toggle {
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41px;
+  height: 38px;
+  top: -66px;
+  right: 31px;
+
+  z-index: 2;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 20px;
+    height: 2px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .user-nav,
+  .user-action {
+    display: none;
+  }
+
+  .main-nav--opened .user-nav,
+  .main-nav--opened .user-action {
+    display: block;
+  }
+
+  .main-nav--no-js .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--no-js .user-nav,
+  .main-nav--no-js .user-action {
+    display: block;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
