@@ -9,6 +9,10 @@
   padding: 30px 30px 30px 75px;
 
   border-top: 2px solid rgb(236, 236, 236);
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .user-nav__catalog-link {
@@ -26,9 +30,10 @@
   }
 
   .user-nav__item {
+
+    margin-top: -27px;
     padding: 0;
-    padding-top: 24px;
-    padding-right: 30px;
+    padding-right: 36px;
 
     border: none;
   }
@@ -44,6 +49,7 @@
   .user-nav__item {
     padding-top: 30px;
     padding-left: 34px;
+    padding-right: 34px;
 
     font-size: 17px;
 
@@ -51,6 +57,33 @@
 
     &:first-child {
       padding-left: 0;
+
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-nav {
+    flex-wrap: wrap;
+
+    max-width: 428px;
+  }
+
+  .user-nav__item {
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 35px;
+
+    &--dropdown {
+      display: block;
+
+      padding-top: 17px;
+      padding-right: 61px;
+      padding-left: 0;
+
+      font-size: 15px;
+      line-height: 24px;
 
       border: none;
     }

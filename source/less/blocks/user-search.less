@@ -1,5 +1,18 @@
 .user-search {
   position: relative;
+
+  &--icon::before {
+    content: "";
+
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 9px;
+    left: -42px;
+
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .user-search__input {
@@ -10,6 +23,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .user-search {
+    &--icon::before {
+      display: none;
+    }
+  }
+
   .user-search__input::placeholder {
     visibility: hidden;
   }

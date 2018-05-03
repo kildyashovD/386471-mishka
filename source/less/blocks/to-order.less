@@ -1,6 +1,6 @@
 .to-order__heading {
   margin: 0;
-  padding: 75px 0;
+  padding: 72px 0 80px 0;
 
   text-align: center;
 
@@ -18,7 +18,7 @@
 
 .to-order__description {
   margin: 0;
-  padding: 30px;
+  padding: 21px 30px 23px 30px;
 
   font-size: 13px;
   font-weight: 400;
@@ -27,6 +27,8 @@
 
 @media (min-width: @tablet-width) {
   .to-order__heading {
+    padding-top: 92px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -37,9 +39,22 @@
 
   .to-order__description {
     padding: 0;
-    padding-top: 78px;
+    padding-top: 74px;
 
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .to-order__heading {
+    padding-bottom: 102px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .to-order__description {
+    padding: 122px 155px 5px 175px;
   }
 }

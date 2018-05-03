@@ -8,19 +8,28 @@
 
   font: inherit;
   text-align: center;
+  text-transform: uppercase;
 
   &--size-s {
-    width: 180px;
-    padding: 18px 24px;
+    width: 192px;
+    padding: 11px 24px;
   }
 
   &--size-l {
     width: 260px;
-    padding: 16px 10px;
+    padding: 13px 10px;
   }
 
   &--theme-gray {
     border: 2px solid @color-gray;
     color: @color-gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--size-l {
+      width: 290px;
+    }
   }
 }

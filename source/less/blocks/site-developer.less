@@ -12,5 +12,26 @@
 @media (min-width: @tablet-width) {
   .site-developer {
     margin: 0;
+
+    font-size: 18px;
+    line-height: 19px;
+  }
+
+  .site-developer__link {
+    position: relative;
+    padding-right: 25px;
+  }
+
+  .site-developer__icon {
+    position: absolute;
+    top: -6px;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-developer__link {
+    padding-right: 0;
+    padding-left: 100px;
   }
 }

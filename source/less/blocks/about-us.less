@@ -3,7 +3,7 @@
 
   width: 320px;
   margin: auto;
-  padding: 30px 30px 40px 30px;
+  padding: 30px 30px 15px 30px;
 }
 
 .about-us__heading {
@@ -22,13 +22,101 @@
 .about-us__item {
   box-sizing: border-box;
 
-  padding-top: 60px;
+  position: relative;
+  padding-top: 68px;
+  margin-bottom: 7px;
+
+  &--icon-flower::before {
+    content: "";
+
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    top: 15px;
+    left: 8px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-money::before {
+    content: "";
+
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    top: 17px;
+    left: 0;
+
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-heart::before {
+    content: "";
+
+    position: absolute;
+    width: 34px;
+    height: 28px;
+    top: 21px;
+    left: 8px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-ball::before {
+    content: "";
+
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    top: 18px;
+    left: 3px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-rocket::before {
+    content: "";
+
+    position: absolute;
+    width: 55px;
+    height: 23px;
+    top: 20px;
+    left: -5px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--icon-gift::before {
+    content: "";
+
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    top: 19px;
+    left: 3px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__icon {
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
   .about-us {
     width: auto;
-    margin-bottom: 80px;
+    margin-bottom: 46px;
     padding: 0;
   }
 
@@ -52,13 +140,57 @@
 
   .about-us__item {
     margin-right: 32px;
+    padding-top: 81px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--icon-flower::before {
+      top: 29px;
+      left: 11px;
+    }
+
+    &--icon-money::before {
+      top: 27px;
+      left: 2px;
+    }
+
+    &--icon-heart::before {
+      top: 31px;
+      left: 11px;
+    }
+
+    &--icon-ball::before {
+      top: 32px;
+      left: 5px;
+    }
+
+    &--icon-rocket::before {
+      top: 31px;
+      left: -3px;
+    }
+
+    &--icon-gift::before {
+      top: 26px;
+      left: 4px;
+    }
+  }
+
+  .about-us__icon {
+    top: 30px;
+    left: 1px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about-us {
+    margin-bottom: 56px;
+  }
+
   .about-us__heading,
   .about-us__content {
-    padding-left: 175px;
+    padding-left: 173px;
     padding-right: 175px;
   }
 
@@ -68,6 +200,36 @@
   }
 
   .about-us__item {
-    margin-right: 80px;
+    margin-right: 57px;
+
+    &--icon-flower::before {
+      top: 29px;
+      left: 11px;
+    }
+
+    &--icon-money::before {
+      top: 27px;
+      left: 2px;
+    }
+
+    &--icon-heart::before {
+      top: 31px;
+      left: 11px;
+    }
+
+    &--icon-ball::before {
+      top: 32px;
+      left: 5px;
+    }
+
+    &--icon-rocket::before {
+      top: 31px;
+      left: -3px;
+    }
+
+    &--icon-gift::before {
+      top: 26px;
+      left: 4px;
+    }
   }
 }
