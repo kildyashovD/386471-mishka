@@ -17,10 +17,24 @@
 }
 
 .production__heading {
+  position: relative;
   margin: 0;
   padding: 23px 30px 25px 88px;
 
   font-size: 17px;
+
+  &--icon::before {
+    content: "";
+
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    top: 25px;
+    left: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .production__description {
@@ -52,6 +66,11 @@
     padding-left: 65px;
 
     font-size: 20px;
+
+    &--icon::before {
+      top: -4px;
+      left: 1px;
+    }
   }
 
   .production__description {
@@ -84,6 +103,11 @@
   .production__heading {
     margin-top: 56px;
     padding-left: 0;
+
+    &--icon::before {
+      top: -53px;
+      left: 1px;
+    }
   }
 
   .production__description {
