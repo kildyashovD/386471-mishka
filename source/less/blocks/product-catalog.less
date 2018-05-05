@@ -11,6 +11,7 @@
 }
 
 .product-catalog__heading {
+  position: relative;
   margin: 0;
   padding: 70px 0 80px 0;
 
@@ -37,8 +38,26 @@
     margin-bottom: 79px;
     padding-top: 93px;
 
+    overflow: hidden;
+
     font-size: 43px;
     line-height: 50px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 110%;
+      height: 24px;
+      bottom: -14px;
+      left: -5px;
+
+      z-index: 1;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
   }
 }
 
