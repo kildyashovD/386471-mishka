@@ -135,7 +135,10 @@
         <div class="production__content production__content--border-gray">
           <h2 class="production__heading production__heading--icon">Процесс производства</h2>
           <div class="production__video video">
-            <img class="video__preview-image" src="img/video-mobile@1x.jpg" alt="Видео с процессом производства">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__preview-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео с процессом производства">
+            </picture>
             <button class="video__play-button video__play-button--position-center" type="button"><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
             <g>
               <g>
