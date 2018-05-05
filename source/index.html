@@ -93,7 +93,11 @@
               </div>
             </dl>
           </div>
-          <img class="product-of-the-week__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара недели">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="product-of-the-week__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Изображение товара недели">
+          </picture>
           <div class="product-of-the-week__content-text product-of-the-week__content-text--position-tablet">
             <p class="product-of-the-week__price product-price">Цена: <span class="product-price__value">990 руб.</span>
             </p>
