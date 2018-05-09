@@ -14,16 +14,16 @@
 
     <div class="page-header__wrapper wrapper">
       <h1 class="visually-hidden">Магазин игрушек ручной работы Mishka</h1>
-      <a class="page-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="logo__img" width="86" height="35" src="img/logo-mobile.svg" alt="Лого">
-        </picture>
-      </a>
       <nav class="main-nav main-nav--closed main-nav--no-js">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="user-nav">
+        <a class="page-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__img" width="86" height="35" src="img/logo-mobile.svg" alt="Лого">
+          </picture>
+        </a>
+        <ul class="page-header__user-nav user-nav">
           <li class="user-nav__item">
             <a class="user-nav__catalog-link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -37,7 +37,7 @@
             <a class="user-nav__catalog-link" href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="user-action">
+        <ul class="page-header__user-action user-action">
           <li class="user-action__item">
             <form class="user-action__user-search user-search user-search--icon" method="get" action="https://echo.htmlacademy.ru">
               <input class="user-search__input" type="text" name="search" placeholder="Поиск по сайту">
