@@ -1,12 +1,30 @@
 .site-developer {
-  margin-top: 30px;
+  box-sizing: border-box;
+
+  margin: auto;
+  margin-top: 28px;
+  max-width: 260px;
 }
 
 .site-developer__link {
   display: block;
 
+  position: relative;
+  padding-left: 37px;
+
+  font-size: 19px;
+  line-height: 18px;
   color: rgb(0, 0, 0);
-  text-align: center;
+}
+
+.site-developer__icon {
+  display: inline-block;
+
+  position: absolute;
+  top: -7px;
+  right: 39px;
+
+  fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,6 +50,6 @@
 @media (min-width: @desktop-width) {
   .site-developer__link {
     padding-right: 0;
-    padding-left: 100px;
+    padding-left: 76px;
   }
 }

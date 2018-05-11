@@ -1,0 +1,129 @@
+.modal-add {
+  display: none;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: @general-font;
+}
+
+.modal-add__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.modal-add__form {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 33px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+
+  background-color: white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal-add__heading {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.modal-add__intro {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+  letter-spacing: 0;
+}
+
+.modal-add__subwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modal-add__option {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 82px;
+  min-height: 52px;
+  padding: 20px 0;
+
+  vertical-align: middle;
+  text-align: center;
+  color: #444444;
+  letter-spacing: 0;
+
+  background: #ffffff;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  outline: none;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.op-1:checked ~ label[for="op-1"],
+.op-2:checked ~ label[for="op-2"],
+.op-3:checked ~ label[for="op-3"] {
+  border: 2px solid #46c1ae;
+}
+
+.modal-add__submit-button {
+  width: 100%;
+  min-height: 52px;
+  padding: 17px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0;
+
+  background-color: #46c1ae;
+  border: none;
+  outline: none;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-add__wrapper {
+    width: 566px;
+  }
+
+  .modal-add__form {
+    padding: 0 92px;
+    padding-top: 37px;
+    padding-bottom: 46px;
+  }
+
+  .modal-add__option {
+    min-width: 112px;
+  }
+}
