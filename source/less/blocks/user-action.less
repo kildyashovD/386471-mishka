@@ -21,6 +21,20 @@
   color: rgb(0, 0, 0);
 }
 
+@media (max-width: @mobile-width-only) {
+  .user-action {
+    display: none;
+  }
+
+  .main-nav--opened .user-action {
+    display: block;
+  }
+
+  .main-nav--no-js .user-action {
+    display: block;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .user-action {
     display: flex;

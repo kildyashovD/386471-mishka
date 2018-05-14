@@ -1,5 +1,5 @@
 .modal-add {
-  display: none;
+  display: block;
 
   font-weight: 700;
   font-size: 17px;
@@ -78,9 +78,9 @@
   }
 }
 
-.op-1:checked ~ label[for="op-1"],
-.op-2:checked ~ label[for="op-2"],
-.op-3:checked ~ label[for="op-3"] {
+.modal-add__op-1:checked ~ label,
+.modal-add__op-2:checked ~ label,
+.modal-add__op-3:checked ~ label {
   border: 2px solid #46c1ae;
 }
 

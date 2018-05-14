@@ -19,6 +19,20 @@
   color: rgb(0, 0, 0);
 }
 
+@media (max-width: @mobile-width-only) {
+  .user-nav {
+    display: none;
+  }
+
+  .main-nav--opened .user-nav {
+    display: block;
+  }
+
+  .main-nav--no-js .user-nav {
+    display: block;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .user-nav {
     display: flex;
