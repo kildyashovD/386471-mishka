@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
+var posthtml = require("gulp-posthtml");
 var del = require("del");
 var run = require("run-sequence");
 
@@ -22,7 +23,8 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function() {
@@ -35,9 +37,9 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -63,8 +65,9 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(posthtml())
     .pipe(gulp.dest("build"));
 });
 
