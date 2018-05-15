@@ -20,6 +20,17 @@
     top: 32px;
     left: 77px;
   }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    transition: transform 0.3s;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -56,6 +67,8 @@
   }
 
   .video__play-button {
+    transition: transform 0.3s;
+
     &--position-center {
       top: 188px;
       left: 291px;

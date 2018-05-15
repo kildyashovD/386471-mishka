@@ -10,6 +10,8 @@
   text-align: center;
   text-transform: uppercase;
 
+  transition: 0.3s;
+
   &--size-s {
     width: 192px;
     padding: 11px 24px;
@@ -24,25 +26,23 @@
     border: 2px solid @color-gray;
     color: @color-gray;
   }
+
+  &:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: #444444;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .button {
     &--size-l {
       width: 290px;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .button {
-    transition: 0.3s;
-
-    &:hover {
-      color: rgb(255, 255, 255);
-
-      background-color: #444444;
-      transition: 0.3s;
     }
   }
 }

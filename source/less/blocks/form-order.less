@@ -6,6 +6,10 @@
   padding: 0 30px;
 }
 
+.form-order__wrapper {
+  position: relative;
+}
+
 .form-order__item {
   margin: 0;
   margin-bottom: 18px;
@@ -43,6 +47,14 @@
 
     border: 2px solid black;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active::before {
+    border: 2px solid #c7c7c7;
   }
 
   &::after {
@@ -88,6 +100,14 @@
     border: 2px solid black;
   }
 
+  &:hover::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active::before {
+    border: 2px solid #c7c7c7;
+  }
+
   &:last-child {
     margin-bottom: 20px;
   }
@@ -115,6 +135,11 @@
 
   border: none;
   border-bottom: 2px solid rgb(0, 0, 0);
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
 .form-order__customer-email,
@@ -133,6 +158,45 @@
   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+.form-order__wrapper:hover .form-order__customer-email,
+.form-order__wrapper:hover .form-order__customer-tel {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form-order__wrapper:active .form-order__customer-email,
+.form-order__wrapper:active .form-order__customer-tel {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form-order__wrapper:focus .form-order__customer-email,
+.form-order__wrapper:focus .form-order__customer-tel {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form-order__customer-tel-icon,
+.form-order__customer-email-icon {
+  position: absolute;
+  top: -4px;
+  right: 0;
+
+  fill: #cccccc;
+}
+
+.form-order__wrapper:hover .form-order__customer-tel-icon,
+.form-order__wrapper:hover .form-order__customer-email-icon {
+  fill: #62d1ba;
+}
+
+.form-order__wrapper:active .form-order__customer-tel-icon,
+.form-order__wrapper:active .form-order__customer-email-icon {
+  fill: #62d1ba;
+}
+
+.form-order__wrapper:focus .form-order__customer-tel-icon,
+.form-order__wrapper:focus .form-order__customer-email-icon {
+  fill: #62d1ba;
+}
+
 .form-order__message {
   display: block;
   box-sizing: border-box;
@@ -146,6 +210,11 @@
   font-weight: 400;
 
   border: 2px solid rgb(0, 0, 0);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .form-order__notification {

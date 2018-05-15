@@ -4,6 +4,20 @@
   text-align: center;
 }
 
+.logo__img {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo .logo__img:hover {
+  fill: #46c1ae;
+}
+
 @media (min-width: @tablet-width) {
   .logo__img {
     width: 113px;
@@ -12,16 +26,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .logo {
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
   .logo__img {
     width: 148px;
     height: 72px;

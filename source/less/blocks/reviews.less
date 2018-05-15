@@ -56,38 +56,49 @@
   display: flex;
 
   margin-bottom: 38px;
-
-  .reviews__previous-button,
-  .reviews__next-button {
-    box-sizing: border-box;
-
-    padding: 0;
-    width: 50%;
-    height: 48px;
-  }
-
-  .reviews__previous-button {
-    font-size: 0;
-
-    background-image: url("../img/icon-left-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-
-    border: none;
-  }
-
-  .reviews__next-button {
-    font-size: 0;
-
-    background-image: url("../img/icon-right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-
-    border: none;
-  }
 }
+
+.reviews__previous-button,
+.reviews__next-button {
+  box-sizing: border-box;
+
+  padding: 0;
+  width: 50%;
+  height: 48px;
+}
+
+.reviews__previous-button {
+  font-size: 0;
+
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border: none;
+}
+
+.reviews__next-button {
+  font-size: 0;
+
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border: none;
+}
+
+.reviews__previous-button:hover,
+.reviews__next-button:hover {
+  opacity: 0.6;
+}
+
+.reviews__previous-button:active,
+.reviews__next-button:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .reviews {
@@ -214,15 +225,5 @@
   .reviews__previous-button,
   .reviews__next-button {
     cursor: pointer;
-  }
-
-  .reviews__previous-button:hover,
-  .reviews__next-button:hover {
-    opacity: 0.6;
-  }
-
-  .reviews__previous-button:active,
-  .reviews__next-button:active {
-    opacity: 0.3;
   }
 }

@@ -13,6 +13,14 @@
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
   }
+
+  &--icon:hover::before {
+    background-image: url("../img/icon-search-green.svg");
+  }
+
+  &--icon:active::before {
+    opacity: 0.3;
+  }
 }
 
 .user-search__input {
