@@ -7,6 +7,18 @@
   font-family: @general-font;
 }
 
+.modal-add__show {
+  display: block;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -164px;
+  margin-left: -283px;
+
+  z-index: 10;
+}
+
 .modal-add__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -101,15 +113,6 @@
   outline: none;
 
   transition: 0.3s ease-in-out;
-
-  &:hover,
-  &:focus {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -125,5 +128,12 @@
 
   .modal-add__option {
     min-width: 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-add__show {
+    margin-top: -164px;
+    margin-left: -283px;
   }
 }
