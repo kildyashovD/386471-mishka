@@ -16,15 +16,58 @@
   padding: 0;
 
   border: none;
+
+  &--margin-name {
+    margin-bottom: 7px;
+  }
+
+  &--position-top {
+    margin-bottom: 10px;
+  }
 }
 
 .form-order__heading {
+  position: relative;
   padding: 0;
   margin-bottom: 34px;
+  margin-top: 0;
 
   line-height: 17px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 77%;
+    height: 2px;
+    top: 10px;
+    left: 61px;
+
+    background-color: #63d1bb;
+  }
+
+  &--margin-name {
+    margin-bottom: 26px;
+  }
+
+  &--margin-tel {
+    margin-bottom: 18px;
+  }
+
+  &--margin-mail {
+    margin-bottom: 18px;
+
+    &::after {
+      width: 69%;
+      left: 81px;
+    }
+  }
+
+  &--margin-message {
+    margin-bottom: 26px;
+  }
 }
 
 .form-order__product-type-label {
@@ -128,7 +171,7 @@
 .form-order__customer-name {
   width: 100%;
   margin: 0 0 24px;
-  padding: 18px 0;
+  padding: 14px 0 13px 0;
 
   font-size: 17px;
   line-height: 18px;
@@ -139,6 +182,12 @@
   &:hover,
   &:focus {
     border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.form-order__container {
+  &--margin-name {
+    margin-top: -4px;
   }
 }
 
@@ -176,10 +225,14 @@
 .form-order__customer-tel-icon,
 .form-order__customer-email-icon {
   position: absolute;
-  top: -4px;
-  right: 0;
+  top: -2px;
+  right: 9px;
 
   fill: #cccccc;
+}
+
+.form-order__customer-email-icon {
+  right: 4px;
 }
 
 .form-order__wrapper:hover .form-order__customer-tel-icon,
@@ -201,7 +254,7 @@
   display: block;
   box-sizing: border-box;
 
-  margin: 0 0 18px;
+  margin: 0 0 -5px;
   width: 100%;
   padding: 17px;
 
@@ -235,6 +288,10 @@
   .form-order__container {
     display: flex;
 
+    &--margin-name {
+      margin-top: 2px;
+    }
+
     &--flex-row-reverse {
       display: flex;
       flex-direction: row-reverse;
@@ -247,6 +304,16 @@
 
     width: 25%;
     margin-bottom: 0;
+
+    letter-spacing: 0.1px;
+
+    &::after {
+      display: none;
+    }
+
+    &--margin-message {
+      margin-top: -8px;
+    }
   }
 
   .form-order__wrapper {
@@ -283,6 +350,8 @@
     margin-bottom: 60px;
     padding-left: 82px;
 
+    letter-spacing: 0.5px;
+
     &::before {
       width: 48px;
       height: 48px;
@@ -298,9 +367,12 @@
   }
 
   .form-order__product-color-label {
-    width: 250px;
+    width: 170px;
     margin-bottom: 58px;
     padding-left: 81px;
+    font-size: 19px;
+    line-height: 18px;
+    margin-right: 93px;
 
     font-size: 19px;
     line-height: 18px;
@@ -309,6 +381,10 @@
       top: -16px;
       width: 49px;
       height: 49px;
+    }
+
+    &--margin-null {
+      margin-right: 0;
     }
   }
 
@@ -343,19 +419,30 @@
 
   .form-order__customer-email,
   .form-order__customer-tel {
+    padding-bottom: 15px;
+    padding-left: 15px;
+
     font-size: 19px;
     line-height: 18px;
 
     background-color: transparent;
   }
 
+  .form-order__customer-tel-icon {
+    right: 25px;
+  }
+
   .form-order__customer-email {
     margin-bottom: 50px;
   }
 
+  .form-order__customer-email-icon {
+    right: 21px;
+  }
+
   .form-order__message {
-    margin-top: -31px;
-    margin-bottom: 50px;
+    margin-top: -26px;
+    margin-bottom: 44px;
   }
 }
 

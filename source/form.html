@@ -44,6 +44,11 @@
                 <input class="user-search__input" type="text" name="search" placeholder="Поиск по сайту">
               </label>
             </form>
+            <a class="user-action__user-search-link" href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+              </svg>
+            </a>
           </li>
           <li class="user-action__item">
             <a class="user-action__cart cart cart--icon" href="#">
@@ -93,26 +98,26 @@
               <label class="form-order__product-color-label" for="product-color-white">Белый</label>
               <!--Gray-->
               <input class="form-order__product-color-checkbox visually-hidden" type="checkbox" name="color-gray" id="product-color-gray" checked>
-              <label class="form-order__product-color-label" for="product-color-gray">Серый</label>
+              <label class="form-order__product-color-label form-order__product-color-label--margin-null" for="product-color-gray">Серый</label>
               <!--Tiffany-->
               <input class="form-order__product-color-checkbox visually-hidden" type="checkbox" name="color-tiffany" id="product-color-tiffany">
               <label class="form-order__product-color-label" for="product-color-tiffany">"Тиффани"</label>
               <!--Black-->
               <input class="form-order__product-color-checkbox visually-hidden" type="checkbox" name="color-black" id="product-color-black">
-              <label class="form-order__product-color-label" for="product-color-black">Черный</label>
+              <label class="form-order__product-color-label form-order__product-color-label--margin-null" for="product-color-black">Черный</label>
               <!--Pink-->
               <input class="form-order__product-color-checkbox visually-hidden" type="checkbox" name="color-pink" id="product-color-pink">
               <label class="form-order__product-color-label" for="product-color-pink">Розовый</label>
               <!--Orange-->
               <input class="form-order__product-color-checkbox visually-hidden" type="checkbox" name="color-orange" id="product-color-orange">
-              <label class="form-order__product-color-label" for="product-color-orange">Оранжевый</label>
+              <label class="form-order__product-color-label form-order__product-color-label--margin-null" for="product-color-orange">Оранжевый</label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-order__item">
+        <fieldset class="form-order__item form-order__item--margin-name">
           <div class="form-order__container wrapper">
-            <p class="form-order__heading">ФИО</p>
+            <p class="form-order__heading form-order__heading--margin-name">ФИО</p>
             <div class="form-order__wrapper">
               <div class="form-order__container">
                 <label class="form-order__customer-name-label" for="customer-name">Имя:</label>
@@ -122,7 +127,7 @@
                 <label class="form-order__customer-name-label" for="customer-name">Фамилия:</label>
                 <input class="form-order__customer-name" type="text" name="last-name" id="customer-last-name" placeholder="Укажите фамилию*" required>
               </div>
-              <div class="form-order__container">
+              <div class="form-order__container form-order__container--margin-name">
                 <label class="form-order__customer-name-label" for="customer-patronymic">Отчество:</label>
                 <input class="form-order__customer-name" type="text" name="patronymic " id="customer-patronymic" placeholder="Отчество, если желаете">
               </div>
@@ -132,7 +137,7 @@
 
         <fieldset class="form-order__item form-order__item--bg-gray">
           <div class="form-order__container wrapper">
-            <p class="form-order__heading ">Тел</p>
+            <p class="form-order__heading form-order__heading--margin-tel">Тел</p>
             <div class="form-order__wrapper">
               <label class="visually-hidden" for="customer-tel">Телефон</label>
               <input class="form-order__customer-tel" type="tel" name="tel" id="customer-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
@@ -154,7 +159,7 @@
 
         <fieldset class="form-order__item form-order__item--position-top form-order__item--bg-gray">
           <div class="form-order__container wrapper">
-            <p class="form-order__heading ">E-mail</p>
+            <p class="form-order__heading form-order__heading--margin-mail">E-mail</p>
             <div class="form-order__wrapper">
               <label class="visually-hidden" for="customer-email">Почта</label>
               <input class="form-order__customer-email" type="email" name="email" id="customer-email" placeholder="Ваш email*" required>
@@ -167,7 +172,7 @@
 
         <fieldset class="form-order__item">
           <div class="form-order__container wrapper">
-            <p class="form-order__heading">Доп</p>
+            <p class="form-order__heading form-order__heading--margin-message">Доп</p>
             <div class="form-order__wrapper">
               <textarea class="form-order__message" name="message" rows="6" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>

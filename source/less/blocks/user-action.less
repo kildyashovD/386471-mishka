@@ -15,6 +15,26 @@
   }
 }
 
+.user-action__item {
+  position: relative;
+}
+
+.user-action__user-search-link {
+  position: absolute;
+  top: 34px;
+  left: 33px;
+
+  fill: #d3d2d2;
+
+  &:hover svg {
+    fill: #63d1bb;
+  }
+
+  &:active svg {
+    fill: rgba(208, 241, 234, 0.3);
+  }
+}
+
 .user-action__cart {
   display: block;
 
@@ -63,10 +83,17 @@
     }
   }
 
-  .user-action__user-search {
-    padding: 32px 23px 33px 27px;
+  .user-action__user-search-link {
+    display: block;
+
+    position: static;
+    padding: 35px 31px 33px 33px;
 
     border-left: 1px solid rgb(236, 236, 236);
+  }
+
+  .user-action__user-search {
+    display: none;
   }
 
   .user-action__cart {
