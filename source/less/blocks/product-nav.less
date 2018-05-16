@@ -63,6 +63,36 @@
   &--bg-dark-green {
     background-color: #56c3b2;
   }
+
+  &--interior-icon::after {
+    content: "";
+
+    position: absolute;
+    width: 41px;
+    height: 62px;
+    top: 25px;
+    right: 35px;
+
+    opacity: 0.7;
+
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--toys-icon::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 22px;
+    right: 28px;
+
+    opacity: 0.7;
+
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -135,33 +165,13 @@
     }
 
     &--interior-icon::after {
-      content: "";
-
-      position: absolute;
-      width: 41px;
-      height: 62px;
       top: 31px;
       right: 35px;
-
-      opacity: 0.7;
-
-      background-image: url("../img/icon-interior.svg");
-      background-repeat: no-repeat;
     }
 
     &--toys-icon::after {
-      content: "";
-
-      position: absolute;
-      width: 60px;
-      height: 60px;
       top: 31px;
       right: 35px;
-
-      opacity: 0.7;
-
-      background-image: url("../img/icon-toy.svg");
-      background-repeat: no-repeat;
     }
   }
 }
