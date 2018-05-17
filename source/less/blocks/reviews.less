@@ -43,11 +43,12 @@
   margin-bottom: 6px;
 
   font-style: normal;
+  letter-spacing: 0.1px;
 }
 
 .reviews__author-nick {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   font-weight: 400;
 }
@@ -56,38 +57,49 @@
   display: flex;
 
   margin-bottom: 38px;
-
-  .reviews__previous-button,
-  .reviews__next-button {
-    box-sizing: border-box;
-
-    padding: 0;
-    width: 50%;
-    height: 48px;
-  }
-
-  .reviews__previous-button {
-    font-size: 0;
-
-    background-image: url("../img/icon-left-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-
-    border: none;
-  }
-
-  .reviews__next-button {
-    font-size: 0;
-
-    background-image: url("../img/icon-right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-
-    border: none;
-  }
 }
+
+.reviews__previous-button,
+.reviews__next-button {
+  box-sizing: border-box;
+
+  padding: 0;
+  width: 50%;
+  height: 50px;
+
+  border: 1px solid #ececec;
+}
+
+.reviews__previous-button {
+  font-size: 0;
+
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border-right: none;
+}
+
+.reviews__next-button {
+  font-size: 0;
+
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.reviews__previous-button:hover,
+.reviews__next-button:hover {
+  opacity: 0.6;
+}
+
+.reviews__previous-button:active,
+.reviews__next-button:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .reviews {
@@ -116,6 +128,7 @@
     line-height: 50px;
 
     margin-bottom: 48px;
+    margin-left: -3px;
   }
 
   .reviews__text {
@@ -188,6 +201,7 @@
   .reviews__heading {
     padding-top: 70px;
     padding-left: 170px;
+    margin-left: 0;
 
     font-size: 53px;
     line-height: 57px;
@@ -203,11 +217,24 @@
     padding-bottom: 65px;
   }
 
+  .reviews__author-name {
+    margin-bottom: 7px;
+
+    letter-spacing: -0.4px;
+  }
+
   .reviews__write-us-link {
     top: 78px;
   }
 
   .reviews__switch {
-    bottom: 62px;
+    bottom: 60px;
+  }
+
+  .reviews__previous-button,
+  .reviews__next-button {
+    cursor: pointer;
+
+    border: none;
   }
 }

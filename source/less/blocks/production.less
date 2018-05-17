@@ -14,6 +14,16 @@
   &--border-gray {
     border: 2px solid rgb(236, 236, 236);
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px 0;
+    transition: box-shadow 0.3s;
+  }
 }
 
 .production__heading {
@@ -102,6 +112,7 @@
 
   .production__heading {
     margin-top: 56px;
+    margin-bottom: 34px;
     padding-left: 0;
 
     &--icon::before {

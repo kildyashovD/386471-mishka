@@ -28,6 +28,10 @@
 
 .social-nets__link {
   display: block;
+
+  svg {
+    fill: #231f20;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -41,5 +45,13 @@
 @media (min-width: @desktop-width) {
   .social-nets {
     padding-top: 8px;
+  }
+
+  .social-nets__link:hover svg {
+    fill: #46c1ae;
+  }
+
+  .social-nets__link:active svg {
+    opacity: 0.3;
   }
 }

@@ -1,25 +1,36 @@
 .cart {
   position: relative;
 
-  &--icon::before {
-    content: "";
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-    position: absolute;
-    width: 21px;
-    height: 19px;
-    top: 2px;
-    left: -42px;
-
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
+.cart__icon {
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  top: 2px;
+  left: -42px;
+
+  fill: #d3d2d2;
+}
+
+.cart:hover .cart__icon {
+  fill: #63d1bb;
+}
+
+.cart:active .cart__icon {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
-  .cart {
-    &--icon::before {
-      top: 34px;
-      left: 32px;
-    }
+  .cart__icon {
+    top: 34px;
+    left: 32px;
   }
 }

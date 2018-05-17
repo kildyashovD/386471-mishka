@@ -2,7 +2,7 @@
   box-sizing: border-box;
 
   margin: auto;
-  margin-top: 28px;
+  margin-top: 25px;
   max-width: 260px;
 }
 
@@ -35,6 +35,10 @@
     line-height: 19px;
   }
 
+  .page-footer__item.site-developer {
+    padding-top: 11px;
+  }
+
   .site-developer__link {
     position: relative;
     padding-right: 25px;
@@ -51,5 +55,13 @@
   .site-developer__link {
     padding-right: 0;
     padding-left: 76px;
+  }
+
+  .site-developer__link:hover .site-developer__icon {
+    fill: #46c1ae;
+  }
+
+  .site-developer__link:active {
+    opacity: 0.3;
   }
 }

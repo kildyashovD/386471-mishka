@@ -10,6 +10,8 @@
   text-align: center;
   text-transform: uppercase;
 
+  transition: 0.3s;
+
   &--size-s {
     width: 192px;
     padding: 11px 24px;
@@ -23,6 +25,17 @@
   &--theme-gray {
     border: 2px solid @color-gray;
     color: @color-gray;
+  }
+
+  &:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: #444444;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
